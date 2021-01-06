@@ -23,12 +23,15 @@ body {
 }
 
 .home-image-container {
-    background-image: url('/media/background_masthead_full.jpg') no-repeat right bottom fixed;
+    background: url(/media/background_masthead_full.jpg) no-repeat center center fixed;
     background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555555;
 }
 
 .signature-font {
     font-family: 'Dancing Script', sans-serif;
 }
-
-.
+.heading-bg {
+    background-color: rgb(255, 255, 255, 0.8);
+}
