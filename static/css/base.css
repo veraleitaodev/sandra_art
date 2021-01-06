@@ -22,19 +22,125 @@ body {
     color: black;
 }
 
-.home-image-container {
-    background: url(/media/background_masthead_full.jpg) no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
-    color: #555555;
+/*--- colours ---*/
+.grad-grey {
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} /* code from cssgradient.io */
+
+.darkred {
+    color: #73262C !important;
 }
+
+.bg-darkred {
+    background-color: #73262C !important;
+}
+
+.lightred {
+    color: #A62E44 !important;
+}
+
+.bg-lightred {
+    background-color: #A62E44 !important;
+}
+
+.gold {
+    color: #BF9673 !important;
+}
+
+.bg-gold {
+    background-color: #BF9673 !important;
+}
+
+.offwhite {
+    color: #e4f2f1 !important;
+}
+
+.bg-offwhite {
+    background-color: #e4f2f1 !important;
+}
+
+.black {
+    color: #242625 !important;
+}
+
+.bg-black {
+    background-color: #242625 !important;
+}
+
+.white {
+    color: #F2F2F2 !important;
+}
+
+.bg-white {
+    background-color: #F2F2F2 !important;
+}
+
+.lightgrey {
+    color: #D9D9D9 !important;
+}
+
+.bg-lightgrey {
+    background-color: #D9D9D9 !important;
+}
+
+.grey {
+    color: #BFBFBF !important;
+}
+
+.bg-grey {
+    background-color: #BFBFBF !important;
+}
+
+.darkgrey {
+    color: #A6A6A6 !important;
+}
+
+.bg-darkgrey {
+    background-color: #A6A6A6 !important;
+}
+
+/*--- fonts ---*/
 
 .signature-font {
     font-family: 'Dancing Script', sans-serif;
 }
+
+.heading-font {
+    font-family: 'Exo', sans-serif;
+}
+
+/*--- Navigation ---*/
+
+.nav-container {
+    background-color: ;
+}
+
+/*--- Footer ---*/
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/*--- Masthead section ---*/
 .heading-bg {
     background-color: rgb(255, 255, 255, 0.8);
 }
+
+.home-image-container {
+    background: url(/media/background_masthead_full.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    color: #555555;
+}
+
+
+/*--- About section ---*/
+
+
+
+
 
 /* bootstrap template */
 .page-section {
@@ -60,4 +166,43 @@ body {
     background-size: cover;
     color: #555555;
     min-height: 800px;
+}
+
+.gallery-item {
+    max-width: 400px;
+}
+
+/* ---Media Queries including code from boutiqueAdo project --- */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
 }

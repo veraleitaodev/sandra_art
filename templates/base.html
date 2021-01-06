@@ -18,7 +18,7 @@
             integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link
-            href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Dancing+Script:wght@400;600;700&family=Kaushan+Script&family=Tajawal:wght@400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Dancing+Script:wght@400;600;700&family=Exo&family=Tajawal:wght@400;700&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
@@ -42,14 +42,14 @@
 
 <body>
     <!--Navigation present in all pages-->
-    <nav class="container-fluid bg-light fixed-top">
+    <nav class="container-fluid nav-container bg-lightgrey fixed-top-desktop-only">
         <div class="row">
             <div class="col-12 col-lg-4 py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link logo-navbar">
                     <img src="{% static 'logo_cropped.png' %}" alt="logo Sandrart">
                 </a>
             </div>
-            <div class="col-12 col-lg-4"></div>
+            <div class="d-none d-lg-block col-lg-4"></div>
             <div class="col-12 col-lg-4">
                 <div class="row">
                     <div class="col-6 my-auto mx-auto">
@@ -125,7 +125,7 @@
     </main>
 
     <!-- Footer costumised bootstrap template-->
-    <footer class="footer text-center">
+    <footer class="footer bg-darkgrey white text-center">
         <div class="container">
             <div class="row">
                 <!-- Footer Location-->
@@ -140,12 +140,12 @@
                 <!-- Footer Social Icons-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <h4 class="text-uppercase mb-4">Around the Web</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/ateliersandraleitao/"><i class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="mx-1" target="_blank" href="https://www.facebook.com/ateliersandraleitao/"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="mx-1" target="_blank" href="https://instagram.com/galeria_sandralopes?igshid=1aw7shb67dzxk"><i class="fab fa-instagram"></i></a>
+                    <a class="mx-1" target="_blank" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
                 </div>
                 <!-- Footer About Text-->
-                <div class="col-lg-4">
+                <div class=" col-lg-4">
                     <h4 class="text-uppercase mb-4">About Sandr@rt</h4>
                     <p class="lead mb-0">
                         Sandr@rt is a trade name owned by Sandra Lopes Leitão, for more information
@@ -157,7 +157,7 @@
         </div>
     </footer>
     <!-- Copyright Section-->
-    <div class="copyright py-4 text-center text-white">
+    <div class="copyright py-4 text-center bg-black white">
         <div class="container"><small>Copyright © Sandrart 2021</small></div>
     </div>
         {% block postloadjs %}

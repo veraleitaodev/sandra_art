@@ -433,3 +433,4 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 -   Used previous work and as templates to write README page and [taste world snacks](https://github.com/ceciliabinck/taste-world-snacks.git) deployment as guidance to write up my deployment
 -   I have copied and pasted small pieces of work from my first attempt at this project, in the repository [sl_art](https://github.com/veraleitaodev/sl_art/).
 -  Logo created at [canva.com](https://www.canva.com/)
+-  css gradient code from [cssgradient.io](https://cssgradient.io/blog/css-gradient-text/)
