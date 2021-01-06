@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* from bootstrap template */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    color: black;
+}
+
+.home-image-container {
+    background-image: url('/media/background_masthead_full.jpg') no-repeat right bottom fixed;
+    background-size: cover;
+}
+
+.signature-font {
+    font-family: 'Dancing Script', sans-serif;
+}
+
+.
