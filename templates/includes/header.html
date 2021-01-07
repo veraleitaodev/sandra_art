@@ -1,0 +1,79 @@
+{% load static %}
+
+<div class="container-fluid p-0">
+    <!--banner free delivery to be seen at the top of the page -->
+    <div class="row text-center w-100 m-0">
+        <div class="col-12 bg-black lightgrey">
+            <h4 class="my-2">Safely delivered to your home for <strong>FREE</strong></h4>
+        </div>
+    </div>
+    <div class="row  d-flex justify-content-end">
+        <div class="col-6 col-lg-4 offset-col-3 offset-col-lg-8 ">
+            <ul class="list-inline list-unstyled txt-center">
+                <!-- search box -->
+                <li class="list-inline-item">
+                    <form class="d-flex black">
+                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" />
+                    </form>
+                </li>
+                <!-- Account Icon with dropdown -->
+                <li class="list-inline-item dropdown">
+                    <a class="black nav-link" type="text" id="dropdownMenu" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <div class="text-center">
+                            <div><i class="fas fa-user-alt"></i></div>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu border-0" aria-labelledby="dropdownMenu">
+                        {% if request.user.is_authenticated %}
+                        {% if request.user.is_superuser %}
+                        <li><a class="dropdown-item" href="">Item Management</a></li>
+                        {% endif %}
+                        <li><a class="dropdown-item" href="">My Profile</a></li>
+                        <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
+                        {% else %}
+                        <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
+                        <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
+                        {% endif %}
+                    </ul>
+                </li>
+                <!-- Shopping bag Icon -->
+                <li class="list-inline-item black ">
+                    <a class="{% if grand_total %}grey font-weight-bold{% else %}black{% endif %} nav-link" href="">
+                        <div class="text-center">
+                            <div><i class="fas fa-shopping-bag fa-md"></i></div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Collapsible navbar with bootstrap framework-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- logo -->
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img src="{% static 'images/logo_1.png' %}"
+                    alt="logo Sandrart" class="logo-nav"/> 
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav justify-content-end ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Special Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
