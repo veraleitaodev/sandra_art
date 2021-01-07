@@ -135,15 +135,11 @@ body {
 }
 
 /*--- Footer ---*/
-.footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
 
 /*--- Masthead section ---*/
 
 .home-image-container {
-    background: url(/media/background_masthead_full.jpg) no-repeat center center fixed;
+    background: url(/media/hero_background.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     color: #555555;
