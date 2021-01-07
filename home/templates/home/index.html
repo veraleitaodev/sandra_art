@@ -8,13 +8,11 @@
             <div class="container-fluid home-image-container">
                 
                 <div class="row h-100 align-items-center justify-content-center">
-                    <div class="col-12">
-                        <div class="container heading-bg py-5 px-3">
-                            <!-- Masthead Heading-->
-                            <h1 class="masthead-heading display-1 text-uppercase grad-grey signature-font mb-3">Sandra</h1>
-                            <!-- Masthead Subheading-->
-                            <h3 class="masthead-subheading heading-font mb-0">Modern Impressionist Artist</h3>
-                        </div>
+                    <div class="col-6 py-5 bg-white">
+                        <!-- Masthead Heading-->
+                        <h1 class="masthead-heading display-1 text-uppercase grad-grey signature-font mb-3">Sandra</h1>
+                        <!-- Masthead Subheading-->
+                        <h3 class="masthead-subheading heading-font mb-0">Modern Impressionist Artist</h3>
                     </div>
                 </div>
             </div>
@@ -25,7 +23,7 @@
                 <!-- Gallery Section Heading-->
                 <div class="row">
                     <div class="col">
-                        <h2 class="page-section-heading text-center text-uppercase gold heading-font mb-5">Gallery</h2>
+                        <h2 class="page-section-heading text-center text-uppercase gold heading-font">Gallery</h2>
                     </div>
                 </div>
                 <!-- Gallery Grid Items-->
@@ -35,7 +33,7 @@
                         <div class="gallery-item mx-auto px-lg-5" >
                             <img class="img-fluid" src="{% static 'angel.jpg' %}" alt="angel" />
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-dark">
+                                <div class="text-center mt-2 text-dark">
                                     <p class="item-title">Angel</p>
                                     <p class="blockquote">€600</p>
                                 </div>
@@ -47,7 +45,7 @@
                         <div class="gallery-item mx-auto px-lg-5" >
                             <img class="img-fluid" src="{% static 'imperatriz.jpg' %}" alt="empress" />
                             <div class="gallery-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content display-5 text-center text-dark">
+                                <div class="mt-2 text-center text-dark">
                                     <p class="blockquote">Empress</p>
                                     <p class="blockquote">€780</p>
                                 </div>
@@ -59,7 +57,7 @@
                         <div class="gallery-item mx-auto px-lg-5" >
                             <img class="img-fluid" src="{% static 'culpa.png' %}" alt="guilt" />
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-dark">
+                                <div class="mt-2 text-center text-dark">
                                     <p class="blockquote">Guilt</p>
                                     <p class="blockquote text-mute">Sold</p>
                                 </div>
@@ -71,14 +69,14 @@
             </div>
         </section>
         <!-- About Section-->
-        <section class="page-section bg-white darkgrey mb-0" id="about">
+        <section class="page-section bg-white darkgrey" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase grey">About</h2>
+                <h2 class="page-section-heading text-center text-uppercase gold heading-font">About</h2>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ml-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                    <div class="col-lg-4 mr-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+                    <div class="d-none d-md-block col-md-4"><img src="{% static 'profile_photo.jpg' %}" class="rounded-circle img-fluid profile-img" alt="Sandra profile image"></div>
+                    <div class="col-md-8"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
