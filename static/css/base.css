@@ -136,6 +136,10 @@ body {
 
 /*--- Footer ---*/
 
+.footer-text {
+    font-size: small;
+}
+
 /*--- Masthead section ---*/
 
 .home-image-container {
