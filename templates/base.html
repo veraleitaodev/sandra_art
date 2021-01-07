@@ -43,8 +43,13 @@
 <body>
     <!--Navigation present in all pages-->
     <nav class="container-fluid nav-container bg-white fixed-top-desktop-only">
+        <div class="row text-center">
+            <div class="col bg-black lightgrey">
+                <h4 class="my-2">Safely delivered to your home for <strong>FREE</strong></h4>
+            </div>
+        </div>
         <div class="row align-items-center justify-content-center">
-            <div class="col-12 col-lg-4 py-1 py-lg-0 text-center text-lg-left">
+            <div class="col-lg-4 py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link logo-navbar">
                     <img src="{% static 'logo_cropped.png' %}" alt="logo Sandrart">
                 </a>
@@ -104,7 +109,7 @@
     </main>
 
     <!-- Footer costumised bootstrap template-->
-    <footer class="footer bg-darkgrey white text-center">
+    <footer class="footer bg-darkgrey white">
         <div class="container">
             <div class="row">
                 <!-- Footer Location-->
@@ -119,15 +124,23 @@
                 <!-- Footer Social Icons-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <h4 class="text-uppercase heading-font mb-4">Around the Web</h4>
-                    <a class="mx-1" target="_blank" href="https://www.facebook.com/ateliersandraleitao/"><i
+                    <ul>
+                        <li>
+                             <a class="mx-1" target="_blank" href="https://www.facebook.com/ateliersandraleitao/"><i
                             class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="mx-1" target="_blank"
+                        </li>
+                        <li>
+                            <a class="mx-1" target="_blank"
                         href="https://instagram.com/galeria_sandralopes?igshid=1aw7shb67dzxk"><i
                             class="fab fa-instagram"></i></a>
-                    <a class="mx-1" target="_blank" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a class="mx-1" target="_blank" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
                 </div>
                 <!-- Footer About Text-->
-                <div class=" col-lg-4">
+                <div class="text-center display-3 col-lg-4">
                     <h4 class="text-uppercase heading-font mb-4">About Sandr@rt</h4>
                     <p class="lead mb-0">
                         Sandr@rt is a trade name owned by Sandra Lopes Leitão, for more information

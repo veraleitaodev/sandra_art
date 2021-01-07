@@ -1,0 +1,47 @@
+ <nav class="container-fluid nav-container bg-white fixed-top-desktop-only">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-lg-4 py-1 py-lg-0 text-center text-lg-left">
+                <a href="{% url 'home' %}" class="nav-link logo-navbar">
+                    <img src="{% static 'logo_cropped.png' %}" alt="logo Sandrart">
+                </a>
+            </div>
+            <div class="col-4 offset-8 col-lg-3 offset-lg-5 ">
+                <ul class="list-inline list-unstyled txt-center">
+                    <li class="list-inline-item black ">
+                        <a class="nav-link" data-bs-toggle="modal" href="#foo">
+                            <div class="text-center black">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-inline-item dropdown">
+                        <a class="black nav-link" type="text" id="dropdownMenu" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="text-center">
+                                <div><i class="fas fa-user-alt"></i></div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu border-0" aria-labelledby="dropdownMenu">
+                            {% if request.user.is_authenticated %}
+                            {% if request.user.is_superuser %}
+                            <li><a class="dropdown-item" href="">Item Management</a></li>
+                            {% endif %}
+                            <li><a class="dropdown-item" href="">My Profile</a></li>
+                            <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
+                            {% else %}
+                            <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
+                            <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
+                            {% endif %}
+                        </ul>
+                    </li>
+                    <li class="list-inline-item black ">
+                        <a class="{% if grand_total %}grey font-weight-bold{% else %}black{% endif %} nav-link" href="">
+                            <div class="text-center">
+                                <div><i class="fas fa-shopping-bag fa-md"></i></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
