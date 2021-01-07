@@ -33,23 +33,6 @@ body {
 } /* code from cssportal.com */
 
 
-
-.darkred {
-    color: #73262C !important;
-}
-
-.bg-darkred {
-    background-color: #73262C !important;
-}
-
-.lightred {
-    color: #A62E44 !important;
-}
-
-.bg-lightred {
-    background-color: #A62E44 !important;
-}
-
 .gold {
     color: #BF9673 !important;
 }
@@ -76,10 +59,6 @@ body {
 
 .white {
     color: #F2F2F2 !important;
-}
-
-.bg-white {
-    background-color: #F2F2F2 !important;
 }
 
 .lightgrey {
