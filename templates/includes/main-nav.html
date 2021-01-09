@@ -1,58 +1,38 @@
 
-        "col-lg-4 py-1 py-lg-0 text-center text-lg-left">
-                    <a href="" class="nav-link logo-navbar">
-                        <img src="{% static 'images/logo_1.jpg' %}" alt="logo Sandrart">
-                    </a>
-                </div>
-                <div class="col-4 offset-8 col-lg-3 offset-lg-5 ">
-                    <ul class="list-inline list-unstyled txt-center">
-                        <li class="list-inline-item black ">
-                            <a class="nav-link" data-bs-toggle="modal" href="#foo">
-                                <div class="text-center black">
-                                    <i class="fas fa-search"></i>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="list-inline-item dropdown">
-                            <a class="black nav-link" type="text" id="dropdownMenu" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <div class="text-center">
-                                    <div><i class="fas fa-user-alt"></i></div>
-                                </div>
-                            </a>
-                            <ul class="dropdown-menu border-0" aria-labelledby="dropdownMenu">
-                                {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                <li><a class="dropdown-item" href="">Item Management</a></li>
-                                {% endif %}
-                                <li><a class="dropdown-item" href="">My Profile</a></li>
-                                <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
-                                {% else %}
-                                <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
-                                <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
-                                {% endif %}
-                            </ul>
-                        </li>
-                        <li class="list-inline-item black ">
-                            <a class="{% if grand_total %}grey font-weight-bold{% else %}black{% endif %} nav-link" href="">
-                                <div class="text-center">
-                                    <div><i class="fas fa-shopping-bag fa-md"></i></div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                -->
-            </div>
-            <!--logo -->
-            <div class="row w-100">
-                <nav class="navbar navbar-expand-lg w-100">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <ul class="navbar-nav">
-                        {% include 'includes/mobile-top-header.html' %}
-                        
-                    </ul>
-                </nav>
-            </div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
