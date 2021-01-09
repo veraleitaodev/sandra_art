@@ -51,26 +51,27 @@
     <!--Collapsible navbar with bootstrap framework-->
     <nav class="navbar navbar-expand-lg navbar-light bg-navbar" role="navigation">
         <div class="container-fluid d-flex justify-content-around">
+            <!-- logo -->
+            <a class="navbar-brand me-auto" href="{% url 'home' %}">
+                <img src="{% static 'images/sandrart_logo.png' %}"
+                    alt="logo Sandrart" class="logo-nav"/> 
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- logo -->
-            <a class="navbar-brand me-auto" href="{% url 'home' %}">
-                <img src="{% static 'images/logo_1.png' %}"
-                    alt="logo Sandrart" class="logo-nav"/> 
-            </a>
+            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Gallery</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Special Offers</a>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
