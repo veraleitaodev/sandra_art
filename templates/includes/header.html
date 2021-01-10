@@ -7,15 +7,9 @@
             <h5 class="my-2">Delivered to your home for <strong>FREE</strong></h5>
         </div>
     </div>
-    <div class="row  d-flex justify-content-center justify-content-lg-end">
-        <div class="col-6 col-lg-4 offset-col-3 offset-col-lg-8 ">
-            <ul class="list-inline list-unstyled txt-center">
-                <!-- search box -->
-                <li class="list-inline-item">
-                    <form class="d-flex black">
-                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" />
-                    </form>
-                </li>
+    <div class="row  d-row-flex justify-content-end">
+        <div class="col-6 col-md-4 col-lg-3">
+            <ul class=" nav list-inline list-unstyled me-auto txt-center ">
                 <!-- Account Icon with dropdown -->
                 <li class="list-inline-item dropdown">
                     <a class="black nav-link" type="text" id="dropdownMenu" data-bs-toggle="dropdown"
@@ -50,9 +44,9 @@
     </div>
     <!--Collapsible navbar with bootstrap framework-->
     <nav class="navbar navbar-expand-lg navbar-light bg-navbar" role="navigation">
-        <div class="container-fluid d-flex justify-content-around">
+        <div class="container-fluid">
             <!-- logo -->
-            <a class="navbar-brand me-auto" href="{% url 'home' %}">
+            <a class="navbar-brand pl-3" href="{% url 'home' %}">
                 <img src="{% static 'images/sandrart_logo.png' %}"
                     alt="logo Sandrart" class="logo-nav"/> 
             </a>
@@ -63,7 +57,7 @@
             </button>
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav navbar-nav mb-2 mb-lg-0">
+                <ul class="nav navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Gallery</a>
                     </li>
@@ -73,6 +67,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
+                     <!-- search box -->
+                <li class="list-inline-item">
+                    <form class="d-flex black">
+                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" />
+                    </form>
+                </li>
                 </ul>
             </div>
         </div>
