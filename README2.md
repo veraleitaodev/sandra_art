@@ -234,6 +234,8 @@ For deployment(production), a **PostgreSQL** database is provided by Heroku as a
 - [Balsamiq](https://balsamiq.com/) - to create wireframes.
 - [AWS S3 Bucket](https://aws.amazon.com/) -  to store static and media files in prodcution.
 - [cloudinary](https://cloudinary.com/) - to store images and obtain images urls.
+- [tinypng](https://tinypng.com/) - to compress image sizes.
+- [tradegecko.com](https://www.tradegecko.com/sku-generator-download) - to generate SKU number.
 - [Adobe Color](https://color.adobe.com/) - to extract colour scheme and create palete used in the README.
 
 ### Databases
