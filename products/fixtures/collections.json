@@ -1,7 +1,7 @@
 [
     {
         "pk": 1,
-        "model": "products.category",
+        "model": "products.collection",
         "fields": {
             "name": "ballerinas",
             "friendly_name": "Ballerinas"
@@ -9,7 +9,7 @@
     },
     {
         "pk": 2,
-        "model": "products.category",
+        "model": "products.collection",
         "fields": {
             "name": "traditions",
             "friendly_name": "Traditions"
@@ -17,10 +17,10 @@
     },
     {
         "pk": 3,
-        "model": "products.category",
+        "model": "products.collection",
         "fields": {
-            "name": "reflection",
-            "friendly_name": "Reflexion"
+            "name": "reflections",
+            "friendly_name": "Refletions"
         }
     }
 ]

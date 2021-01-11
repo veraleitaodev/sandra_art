@@ -172,7 +172,7 @@ header {
 }
 
 .gallery {
-    background: url(/media/background_gallery.jpg) no-repeat center center;
+    background: url(/media/gallery_background.jpg) no-repeat center center;
     background-size: cover;
     color: #555555;
     min-height: 800px;

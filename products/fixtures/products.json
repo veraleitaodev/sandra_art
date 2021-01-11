@@ -3,14 +3,150 @@
         "pk": 1,
         "model": "products.product",
         "fields": {
-            "sku": "",
-            "name": "",
-            "description": " to include later ",
-            "price": 600.00,
-            "category": 1,
+            "sku": "BAKTRAOIL1",
+            "name": "Baker Palmira",
+            "description": "Oil Pastel on board\" W 120 cm x H 150 cm",
+            "price": 800.00,
+            "collection": 2,
             
-            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-            "image": "DP0709201205510679M.jpg"
+            "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267977/padeira_ut3tua.jpg",
+            "image": "baker_palmira.jpg",
+            "sold": "False"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "ANGREFOIL1",
+            "name": "Angel",
+            "description": "Oil Pastel on canvas\" W 60 cm x H 90 cm",
+            "price": 700.00,
+            "collection": 3,
+            
+            "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267973/angel_oo8v7a.jpg",
+            "image": "angel.jpg",
+            "sold": "False"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "BALBALOIL2",
+            "name": "Ballerina in Pink",
+            "description": "Oil Pastel on board\" W 120 cm x H 100 cm",
+            "price": 900.00,
+            "collection": 1,
+            
+            "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267975/bailarina_yij5lo.jpg",
+            "image": "ballerina_pink.jpg",
+            "sold": "False"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "SPRREFOIL1",
+            "name": "Spring",
+            "description": "Oil Pastel on board",
+            "price": 700.00,
+            "collection": 3,
+            
+            "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267976/birds_cropped_p2cxhg.jpg",
+            "image": "spring.jpg",
+            "sold": "False"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "BAKTRAOIL2",
+            "name": "Baker",
+            "description":  "Oil Pastel on board\" W 120 cm x H 150 cm",
+            "price": 700.00,
+            "collection": 2,
+            
+            "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267974/baker_male_fn9gm0.jpg",
+            "image": "baker_male.jpg",
+            "sold": "False"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "GUIREFOIL1",
+            "name": "Guilt",
+            "description": "Oil Pastel on board\" W 120 cm x H 150 cm",
+            "price": 700.00,
+            "collection": 3,
+            
+            "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267977/culpa_rf1gvv.png",
+            "image": "guilt.png",
+            "sold": "True"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "EMPREFOIL1",
+            "name": "Empress",
+            "description": "Oil Pastel on board\" W 120 cm x H 150 cm",
+            "price": 700.00,
+            "collection": 3,
+            
+            "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267977/imperatriz_n1elkm.jpg",
+            "image": "empress.jpg",
+            "sold": "False"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "INNBALOIL1",
+            "name": "Innocence",
+            "description": "Oil Pastel on board\" W 120 cm x H 100 cm",
+            "price": 700.00,
+            "collection": 3,
+            
+            "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267977/infancia_yv7j4g.jpg",
+            "image": "innocence.jpg",
+            "sold": "False"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "SHETRAOIL1",
+            "name": "Shepherd",
+            "description": "Oil Pastel on board\" W 120 cm x H 100 cm",
+            "price": 800.00,
+            "collection": 2,
+            
+            "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267978/pastor_2_fy7biv.jpg",
+            "image": "shepherd.jpg",
+            "sold": "False"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku":"SHETRAOIL2",
+            "name": "Shepherd Portrait",
+            "description": "Oil Pastel on board\" W 120 cm x H 150 cm",
+            "price": 800.00,
+            "collection": 2,
+            
+            "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267978/shepperd_copy_neefiq.jpg",
+            "image": "shepherd_portrait.jpg",
+            "sold": "False"
         }
     }
 ]
