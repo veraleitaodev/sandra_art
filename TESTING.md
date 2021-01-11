@@ -427,4 +427,5 @@ I have ried changing collection names but no different until realised that there
 -->
 
 ### Bugs
-- navbar position of logo when burger button appears - 
+- navbar position of logo when burger button appears -  resolved using bootstrap class ms-auto which worked better than trying to control positions with flex box.
+- image size for homepage background had been challenging as it had appeared cropped out. The wordpress [article](https://wordpress.com/go/design/choose-website-background-image/#:~:text=The%20best%20website%20background%20image,to%20minimize%20site%20load%20times.) by Camryn Rabideau was very helpful
