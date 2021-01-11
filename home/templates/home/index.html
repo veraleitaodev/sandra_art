@@ -1,11 +1,15 @@
 {% extends "base.html" %}
 {% load static %}
+{% block extra_title %}Home{% endblock %}
 
 {% block content %}
     
     <!-- Masthead costumised from bootstrap template-->
         {% include 'home/includes/masthead.html' %}
-
+        <!--Banner Section-->
+        <section>
+            {% include 'includes/banner.html' %}
+        </section>
         <!-- Gallery Section-->
         <section class="page-section gallery">
             <div class="container">

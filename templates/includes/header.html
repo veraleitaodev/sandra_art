@@ -1,15 +1,11 @@
 {% load static %}
 
+<header class="bg-light fixed-top-desktop-only p-0">
 <div class="container-fluid p-0">
     <!--banner free delivery to be seen at the top of the page -->
-    <div class="row text-center w-100 m-0">
-        <div class="d-none d-md-block col-md-12 bg-black lightgrey">
-            <h5 class="my-2">Delivered to your home for <strong>FREE</strong></h5>
-        </div>
-    </div>
-    <div class="row  d-row-flex justify-content-end">
+    <div class="row  nav-bg d-row-flex justify-content-end">
         <div class="col-6 col-md-4 col-lg-3">
-            <ul class=" nav list-inline list-unstyled me-auto txt-center ">
+            <ul class=" nav list-inline list-unstyled me-auto txt-center">
                 <!-- Account Icon with dropdown -->
                 <li class="list-inline-item dropdown">
                     <a class="black nav-link" type="text" id="dropdownMenu" data-bs-toggle="dropdown"
@@ -42,8 +38,9 @@
             </ul>
         </div>
     </div>
+
     <!--Collapsible navbar with bootstrap framework-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-navbar" role="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar-colour" role="navigation">
         <div class="container-fluid">
             <!-- logo -->
             <a class="navbar-brand pl-3" href="{% url 'home' %}">
@@ -78,3 +75,4 @@
         </div>
     </nav>
 </div>
+ </header>

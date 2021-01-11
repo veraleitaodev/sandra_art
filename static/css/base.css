@@ -38,7 +38,7 @@ body {
 }
 
 .bg-gold {
-    background-color: #BFAA8F !important;
+    background-color: hsl(34, 27%, 65%) !important;
 }
 
 .darkgold {
@@ -97,9 +97,6 @@ body {
     background-color: #A6A6A6 !important;
 }
 
-.heading-bg {
-    background-color: rgb(255, 255, 255, 0.9);
-}
 
 
 /*--- fonts ---*/
@@ -114,8 +111,17 @@ body {
 
 /*--- Header ---*/
 
+header {
+    color: rgb(242, 242, 242);
+}
+
 .logo-nav {
     max-width: 150px;
+}
+
+.header-bg-home {
+    background-color: rgb(242, 242, 242);
+    opacity: 0.8;
 }
 
 /*--- Footer ---*/
@@ -127,10 +133,10 @@ body {
 /*--- Masthead section ---*/
 
 .home-image-container {
-    background: url(/media/hero_background.jpg) no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
-    color: #555555;
+    background: url(/media/masthead_background.png) no-repeat top right fixed;
+    background-color: rgba(85, 85, 85, 0.5);
+    background-size:cover;
+    height:100vh;
 }
 
 

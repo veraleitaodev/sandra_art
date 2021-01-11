@@ -42,22 +42,10 @@
 
 <body>
 
-    <!--Navigation Fixed to the to only for desktop view -->
-    <header class="bg-light fixed-top-desktop-only p-0">
-        {% include 'includes/header.html' %}
-    </header>
-    <main>
-        
-        {% if messages %}
-        <div class="message-display"></div>
-        {% endif %}
-
-        {% block page_header %}
-        {% endblock %}
-
-        {% block content %}
-        {% endblock %}
-    </main>
+    {% include 'includes/header.html' %}
+    
+    {% block content %}
+    {% endblock %}
     <footer>
         {% include 'includes/footer.html' %}
     </footer>
