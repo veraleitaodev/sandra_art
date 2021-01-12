@@ -189,7 +189,7 @@ For deployment(production), a **PostgreSQL** database is provided by Heroku as a
 ##### Product
 
 
-##### Category
+##### Collection
  
 
 
