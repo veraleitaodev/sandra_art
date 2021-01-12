@@ -41,14 +41,16 @@
 </head>
 
 <body>
-
-    {% include 'includes/header.html' %}
-
+    <header class="bg-light fixed-top-desktop-only p-0">
+        {% include 'includes/header.html' %}
+    </header>
+    <main>
     {% block page_header %}
     {% endblock %}
     
     {% block content %}
     {% endblock %}
+    </main>
     <footer>
         {% include 'includes/footer.html' %}
     </footer>

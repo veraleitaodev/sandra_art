@@ -138,7 +138,14 @@ header {
     background-size:cover;
     height:100vh;
 }
+/*--- products page ---*/
 
+.products-container {
+    background: url(/media/gallery_background.jpg) no-repeat top right fixed;
+    background-color:rgb(242, 242, 242);
+    background-size:cover;
+    height:calc(100vh - 164px);
+}
 
 /*--- sections ---*/
 
