@@ -429,3 +429,5 @@ I have ried changing collection names but no different until realised that there
 ### Bugs
 - navbar position of logo when burger button appears -  resolved using bootstrap class ms-auto which worked better than trying to control positions with flex box.
 - image size for homepage background had been challenging as it had appeared cropped out. The wordpress [article](https://wordpress.com/go/design/choose-website-background-image/#:~:text=The%20best%20website%20background%20image,to%20minimize%20site%20load%20times.) by Camryn Rabideau was very helpful
+- commit 85a08838368a8bb7c920cf2418c009eff9fb0c52: fixed a bug with![migrations](static/images/readme/error_1.png) after renaming product category to product collection. I had the help of Slack community and tutors. Tutor Igor Basuga add helped me paciently with this issue.
+ 
