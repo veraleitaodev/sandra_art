@@ -10,7 +10,8 @@
             "collection": 2,
             
             "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267977/padeira_ut3tua.jpg",
-            "image": "baker_palmira.jpg"
+            "image": "baker_palmira.jpg",
+            "sold": "False"
         }
     },
     {
@@ -24,7 +25,8 @@
             "collection": 3,
             
             "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267973/angel_oo8v7a.jpg",
-            "image": "angel.jpg"
+            "image": "angel.jpg",
+            "sold": "False"
         }
     },
     {
@@ -38,7 +40,8 @@
             "collection": 1,
             
             "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267975/bailarina_yij5lo.jpg",
-            "image": "ballerina_pink.jpg"
+            "image": "ballerina_pink.jpg",
+            "sold": "False"
         }
     },
     {
@@ -52,7 +55,8 @@
             "collection": 3,
             
             "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267976/birds_cropped_p2cxhg.jpg",
-            "image": "spring.jpg"
+            "image": "spring.jpg",
+            "sold": "False"
         }
     },
     {
@@ -66,7 +70,8 @@
             "collection": 2,
             
             "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267974/baker_male_fn9gm0.jpg",
-            "image": "baker_male.jpg"
+            "image": "baker_male.jpg",
+            "sold": "False"
         }
     },
     {
@@ -80,7 +85,8 @@
             "collection": 3,
             
             "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267977/culpa_rf1gvv.png",
-            "image": "guilt.png"
+            "image": "guilt.png",
+            "sold": "True"
         }
     },
     {
@@ -94,7 +100,8 @@
             "collection": 3,
             
             "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267977/imperatriz_n1elkm.jpg",
-            "image": "empress.jpg"
+            "image": "empress.jpg",
+            "sold": "False"
         }
     },
     {
@@ -108,7 +115,8 @@
             "collection": 3,
             
             "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267977/infancia_yv7j4g.jpg",
-            "image": "innocence.jpg"
+            "image": "innocence.jpg",
+            "sold": "False"
         }
     },
     {
@@ -122,7 +130,8 @@
             "collection": 2,
             
             "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267978/pastor_2_fy7biv.jpg",
-            "image": "shepherd.jpg"
+            "image": "shepherd.jpg",
+            "sold": "False"
         }
     },
     {
@@ -136,7 +145,8 @@
             "collection": 2,
             
             "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267978/shepperd_copy_neefiq.jpg",
-            "image": "shepherd_portrait.jpg"
+            "image": "shepherd_portrait.jpg",
+            "sold": "False"
         }
     }
 ]
