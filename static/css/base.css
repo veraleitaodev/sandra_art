@@ -144,7 +144,11 @@ header {
     background: url(/media/gallery_background.jpg) no-repeat top right fixed;
     background-color:rgb(242, 242, 242);
     background-size:cover;
-    height:calc(100vh - 164px);
+    height:100vh;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
 }
 
 /*--- sections ---*/
