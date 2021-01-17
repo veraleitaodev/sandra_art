@@ -1,0 +1,156 @@
+{% load static %}
+
+    <!--transparent header with dropdown account icon and shopping bag icon-->
+    <div class="row d-none d-lg-block transparent-header justify-content-end">
+        <div class="col-4">
+             <!-- logo -->
+            <a class="navbar-brand pl-3" href="{% url 'home' %}">
+                <img src="{% static 'images/sandrart_white_logo.png' %}"
+                    alt="logo Sandrart" class="logo-nav"/> 
+            </a>
+        </div>
+        <div class="col-4">
+             <ul class="nav navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- Gallery -->
+                    <li class="nav-item white dropdown">
+                        <a class="nav-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">Gallery</a>
+                        <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                            <a href="" class="dropdown-item">By Price</a>
+                            <a href="" class="dropdown-item ">By Collection</a>
+                            <a href="{% url 'products' %}" class="dropdown-item">All Artwork</a>
+                        </div>
+                    </li>
+                    <!-- About link -->
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <!-- Contact link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                     <!-- search box -->
+                <li class="list-inline-item">
+                    <form class="d-flex black">
+                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" />
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div class="col-4">
+            <ul class=" nav list-inline list-unstyled me-auto txt-center">
+                <!-- Account Icon with dropdown -->
+                <li class="list-inline-item dropdown">
+                    <a class="white nav-link" type="text" id="dropdownMenu" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <div class="text-center">
+                            <div><i class="fas fa-user-alt"></i></div>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu border-0" aria-labelledby="dropdownMenu">
+                        {% if request.user.is_authenticated %}
+                        {% if request.user.is_superuser %}
+                        <li><a class="dropdown-item" href="">Item Management</a></li>
+                        {% endif %}
+                        <li><a class="dropdown-item" href="">My Profile</a></li>
+                        <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
+                        {% else %}
+                        <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
+                        <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
+                        {% endif %}
+                    </ul>
+                </li>
+                <!-- Shopping bag Icon -->
+                <li class="list-inline-item ">
+                    <a class="{% if grand_total %}grey font-weight-bold{% else %}white{% endif %} nav-link" href="">
+                        <div class="text-center">
+                            <div><i class="fas fa-shopping-bag fa-md"></i></div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+ <!--transparent header with dropdown account icon and shopping bag icon-->
+    <div class="row d-row-flex d-lg-none transparent-header justify-content-end">
+        <div class="col-6 col-md-4 col-lg-3">
+            <ul class=" nav list-inline list-unstyled me-auto txt-center">
+                <!-- Account Icon with dropdown -->
+                <li class="list-inline-item dropdown">
+                    <a class="white nav-link" type="text" id="dropdownMenu1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <div class="text-center">
+                            <div><i class="fas fa-user-alt"></i></div>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu border-0" aria-labelledby="dropdownMenu1">
+                        {% if request.user.is_authenticated %}
+                        {% if request.user.is_superuser %}
+                        <li><a class="dropdown-item" href="">Item Management</a></li>
+                        {% endif %}
+                        <li><a class="dropdown-item" href="">My Profile</a></li>
+                        <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
+                        {% else %}
+                        <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
+                        <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
+                        {% endif %}
+                    </ul>
+                </li>
+                <!-- Shopping bag Icon -->
+                <li class="list-inline-item ">
+                    <a class="{% if grand_total %}grey font-weight-bold{% else %}white{% endif %} nav-link" href="">
+                        <div class="text-center">
+                            <div><i class="fas fa-shopping-bag fa-md"></i></div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Collapsible navbar with bootstrap framework-->
+    <nav class="navbar row navbar-expand-lg navbar-dark transparent-header" id="navbar-colour" role="navigation">
+        <div class="container-fluid">
+            <!-- logo -->
+            <a class="navbar-brand pl-3" href="{% url 'home' %}">
+                <img src="{% static 'images/sandrart_white_logo.png' %}"
+                    alt="logo Sandrart" class="logo-nav"/> 
+            </a>
+            <!-- collapsible button with links  -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon white home-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- Gallery -->
+                    <li class="nav-item white dropdown">
+                        <a class="nav-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">Gallery</a>
+                        <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                            <a href="" class="dropdown-item">By Price</a>
+                            <a href="" class="dropdown-item ">By Collection</a>
+                            <a href="{% url 'products' %}" class="dropdown-item">All Artwork</a>
+                        </div>
+                    </li>
+                    <!-- About link -->
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <!-- Contact link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                     <!-- search box -->
+                <li class="list-inline-item">
+                    <form class="d-flex black">
+                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" />
+                    </form>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

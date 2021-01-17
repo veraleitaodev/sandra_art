@@ -3,81 +3,88 @@
 {% block extra_title %}Home{% endblock %}
 
 {% block content %}
+
+    <section class="header-masthead-container">
+
+     <!-- Masthead costumised from bootstrap template-->
+    {% include 'home/includes/masthead.html' %}
+    </section>
+
+    <!--Banner Section-->
+    <section>
+        {% include 'includes/banner.html' %}
+    </section>
+
+    <!-- Gallery Section-->
+    <section class="page-section gallery">
+        <div class="container">
+            <!-- Gallery Section Heading-->
+            <div class="row">
+                <div class="col">
+                    <h2 class="page-section-heading text-center text-uppercase gold heading-font">Gallery</h2>
+                </div>
+            </div>
+            <!-- Gallery Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Gallery Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="gallery-item mx-auto px-lg-5" >
+                        <img class="img-fluid" src="{% static 'images/angel.jpg' %}" alt="angel" />
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="text-center mt-2 text-dark">
+                                <p class="item-title">Angel</p>
+                                <p class="blockquote">€600</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="gallery-item mx-auto px-lg-5" >
+                        <img class="img-fluid" src="{% static 'images/imperatriz.jpg' %}" alt="empress" />
+                        <div class="gallery-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="mt-2 text-center text-dark">
+                                <p class="blockquote">Empress</p>
+                                <p class="blockquote">€780</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="gallery-item mx-auto px-lg-5" >
+                        <img class="img-fluid" src="{% static 'images/culpa.png' %}" alt="guilt" />
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="mt-2 text-center text-dark">
+                                <p class="blockquote">Guilt</p>
+                                <p class="blockquote text-mute">Sold</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section-->
+    <section class="page-section bg-white darkgrey" id="about">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase gold heading-font">About</h2>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="d-none d-md-block col-md-4"><img src="{% static 'images/profile_photo.jpg' %}" class="rounded-circle img-fluid profile-img" alt="Sandra profile image"></div>
+                <div class="col-md-8"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+            </div>
+            <!-- About Section Button-->
+            <div class="text-center mt-4">
+                <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                    <i class="fas fa-download mr-2"></i>
+                    Free Download!
+                </a>
+            </div>
+        </div>
+    </section>
     
-    <!-- Masthead costumised from bootstrap template-->
-        {% include 'home/includes/masthead.html' %}
-        <!--Banner Section-->
-        <section>
-            {% include 'includes/banner.html' %}
-        </section>
-        <!-- Gallery Section-->
-        <section class="page-section gallery">
-            <div class="container">
-                <!-- Gallery Section Heading-->
-                <div class="row">
-                    <div class="col">
-                        <h2 class="page-section-heading text-center text-uppercase gold heading-font">Gallery</h2>
-                    </div>
-                </div>
-                <!-- Gallery Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Gallery Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="gallery-item mx-auto px-lg-5" >
-                            <img class="img-fluid" src="{% static 'images/angel.jpg' %}" alt="angel" />
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="text-center mt-2 text-dark">
-                                    <p class="item-title">Angel</p>
-                                    <p class="blockquote">€600</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Gallery Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="gallery-item mx-auto px-lg-5" >
-                            <img class="img-fluid" src="{% static 'images/imperatriz.jpg' %}" alt="empress" />
-                            <div class="gallery-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="mt-2 text-center text-dark">
-                                    <p class="blockquote">Empress</p>
-                                    <p class="blockquote">€780</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Gallery Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="gallery-item mx-auto px-lg-5" >
-                            <img class="img-fluid" src="{% static 'images/culpa.png' %}" alt="guilt" />
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="mt-2 text-center text-dark">
-                                    <p class="blockquote">Guilt</p>
-                                    <p class="blockquote text-mute">Sold</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-        <!-- About Section-->
-        <section class="page-section bg-white darkgrey" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase gold heading-font">About</h2>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="d-none d-md-block col-md-4"><img src="{% static 'images/profile_photo.jpg' %}" class="rounded-circle img-fluid profile-img" alt="Sandra profile image"></div>
-                    <div class="col-md-8"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download mr-2"></i>
-                        Free Download!
-                    </a>
-                </div>
-            </div>
-        </section>
 {% endblock %}

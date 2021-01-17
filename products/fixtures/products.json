@@ -148,5 +148,20 @@
             "image": "shepherd_portrait.jpg",
             "sold": "False"
         }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku":"BALBALOIL2",
+            "name": "Ballerina in red",
+            "description": "Oil Pastel on board\" W 120 cm x H 150 cm",
+            "price": 800.00,
+            "collection": 2,
+            
+            "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267972/bailarina_vermelho_lrxq6e.jpg",
+            "image": "ballerina_red.jpg",
+            "sold": "False"
+        }
     }
 ]

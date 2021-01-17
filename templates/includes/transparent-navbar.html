@@ -1,13 +1,13 @@
 {% load static %}
 
-<div class="container-fluid p-0">
-    <!--banner free delivery to be seen at the top of the page -->
-    <div class="row  nav-bg d-row-flex justify-content-end">
-        <div class="col-6 col-md-4 col-lg-3">
+    <!--transparent header with dropdown account icon and shopping bag icon-->
+    <div class="">
+    <div class="row  d-row-flex transparent-header justify-content-end px-0">
+        <div class="col-6 col-md-3">
             <ul class=" nav list-inline list-unstyled me-auto txt-center">
                 <!-- Account Icon with dropdown -->
                 <li class="list-inline-item dropdown">
-                    <a class="black nav-link" type="text" id="dropdownMenu" data-bs-toggle="dropdown"
+                    <a class="white nav-link" type="text" id="dropdownMenu" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         <div class="text-center">
                             <div><i class="fas fa-user-alt"></i></div>
@@ -27,8 +27,8 @@
                     </ul>
                 </li>
                 <!-- Shopping bag Icon -->
-                <li class="list-inline-item black ">
-                    <a class="{% if grand_total %}grey font-weight-bold{% else %}black{% endif %} nav-link" href="">
+                <li class="list-inline-item ">
+                    <a class="{% if grand_total %}grey font-weight-bold{% else %}white{% endif %} nav-link" href="">
                         <div class="text-center">
                             <div><i class="fas fa-shopping-bag fa-md"></i></div>
                         </div>
@@ -39,38 +39,42 @@
     </div>
 
     <!--Collapsible navbar with bootstrap framework-->
-    <nav class="navbar navbar-expand-lg navbar-light" id="navbar-colour" role="navigation">
+    <nav class="navbar row navbar-expand-lg navbar-dark transparent-header px-3" id="navbar-colour" role="navigation">
         <div class="container-fluid">
+            
             <!-- logo -->
-            <a class="navbar-brand pl-3" href="{% url 'home' %}">
-                <img src="{% static 'images/sandrart_logo.png' %}"
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img src="{% static 'images/logo_white_bold.png' %}"
                     alt="logo Sandrart" class="logo-nav"/> 
             </a>
+            <!-- collapsible button with links  -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon home-toggler-icon"></span>
             </button>
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- Gallery -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link white p-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">Gallery</a>
+                        <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                            <a href="" class="dropdown-item">By Price</a>
+                            <a href="" class="dropdown-item ">By Collection</a>
+                            <a href="{% url 'products' %}" class="dropdown-item">All Artwork</a>
+                        </div>
+                    </li>
+                    <!-- About link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
+                        <a class="nav-link white p-3" href="#">About</a>
                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
+                    <!-- Contact link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link white p-3" href="#">Contact</a>
                     </li>
-                     <!-- search box -->
-                <li class="list-inline-item">
-                    <form class="d-flex black">
-                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" />
-                    </form>
-                </li>
                 </ul>
             </div>
-        </div>
+       </div>
     </nav>
 </div>
