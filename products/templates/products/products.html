@@ -3,11 +3,18 @@
 {% block extra_title %}Products{% endblock %}
 
 {% block content %}
+<header>
+    {% include 'includes/simple-navbar.html' %}
+</header>
+<!--Banner Section-->
+<section>
+    {% include 'includes/banner.html' %}
+</section>
 
 <section>
     <!--Main content-->
     <div class="container-fluid">
-          <div class="row my-5"></div>
+
         <div class="row">
             <div class="col-12 my-5 text-center">
                 <h1 class="uppercase title-container heading-font">Artwork</h1>
