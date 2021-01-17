@@ -8,14 +8,32 @@
                 <h1 class="masthead-heading display-1 text-uppercase white signature-font mb-3">Sandra</h1>
                 <!-- Masthead Subheading-->
                 <h3 class="masthead-subheading heading-font text-white mb-3">Modern Impressionist Artist</h3>
-                <div class="row d-md-none">   
-                    <form class="col-10 offset-1 white">
-                        <input class="form-control" type="search" placeholder="Search..." aria-label="Search" />
+                <div class="row d-md-none">
+                    <form class="form col-10 offset-1 white" method="GET" action="{% url 'products' %}">
+                                <div class="input-group w-100">
+                                    <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search">
+                                    <div class="input-group-append">
+                                        <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
+                                            <span class="icon">
+                                                <i class="fas fa-search"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
                     </form>
                 </div> 
-                <div class="row d-none d-md-block">   
-                    <form class="col-8 offset-2 white">
-                        <input class="form-control" type="search" placeholder="Search Artwork" aria-label="Search" />
+                <div class="row d-none d-md-block">
+                    <form class="col-8 offset-2 white" method="GET" action="{% url 'products' %}">
+                                <div class="input-group w-100">
+                                    <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search Artwork">
+                                    <div class="input-group-append">
+                                        <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
+                                            <span class="icon">
+                                                <i class="fas fa-search"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
                     </form>
                 </div> 
             </div>

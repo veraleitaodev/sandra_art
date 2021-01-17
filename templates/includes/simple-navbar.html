@@ -3,11 +3,30 @@
     <!--transparent header with dropdown account icon and shopping bag icon-->
     <div class="container-fluid">
         <div class="row  d-row-flex bg.white justify-content-end px-0">
-            <div class="col-6 col-md-3">
-                <ul class=" nav list-inline list-unstyled me-auto txt-center">
+            <div class="col-8 col-md-4">
+                <ul class=" nav list-inline list-unstyled me-auto txt-center w-100">
+                    <li class="list-inline-item dropdown">
+                        <a class="black nav-link" href="#" id="icon-search" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div><i class="fas fa-search black"></i></div>
+                        </a>
+                        <div class="dropdown-menu w-100 py-0" aria-labelledby="icon-search">
+                            <form class="form" method="GET" action="{% url 'products' %}">
+                                <div class="input-group w-100">
+                                    <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search">
+                                    <div class="input-group-append">
+                                        <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
+                                            <span class="icon">
+                                                <i class="fas fa-search"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
                     <!-- Account Icon with dropdown -->
                     <li class="list-inline-item dropdown">
-                        <a class="white nav-link" type="text" id="dropdownMenu" data-bs-toggle="dropdown"
+                        <a class="nav-link" type="text" id="dropdownMenu" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user-alt black"></i></div>

@@ -123,6 +123,10 @@ body {
     font-size: 2rem;
 }
 
+.dropdown-menu-search {
+    width: 100%;
+}
+
 
 /*--- Footer ---*/
 
