@@ -138,10 +138,11 @@ body {
     background-size:cover;
     height:100vh;
 }
-/*--- products page ---*/
+/*--- products and product detail page ---*/
 
 .products-container {
     background: url(/media/gallery_background.jpg) no-repeat top right fixed;
+    background-size:cover;
     background-color:rgb(242, 242, 242);
 	top: 0;
 	left: 0;
