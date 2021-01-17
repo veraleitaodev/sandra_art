@@ -31,7 +31,7 @@ def all_products(request):
 
         if 'collection' in request.GET:
             collections = request.GET['collection'].split(',')
-            products = products.filter(category__name__in=categories)
+            products = products.filter(collection__name__in=collections)
             collections = Collection.objects.filter(name__in=collections)
 
         if 'q' in request.GET:
