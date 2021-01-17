@@ -112,7 +112,7 @@
             "name": "Innocence",
             "description": "Oil Pastel on board\" W 120 cm x H 100 cm",
             "price": 700.00,
-            "collection": 3,
+            "collection": 1,
             
             "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267977/infancia_yv7j4g.jpg",
             "image": "innocence.jpg",
@@ -157,7 +157,7 @@
             "name": "Ballerina in red",
             "description": "Oil Pastel on board\" W 120 cm x H 150 cm",
             "price": 800.00,
-            "collection": 2,
+            "collection": 1,
             
             "image_url": "https://res.cloudinary.com/veraleitao/image/upload/v1610267972/bailarina_vermelho_lrxq6e.jpg",
             "image": "ballerina_red.jpg",
