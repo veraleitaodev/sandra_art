@@ -15,6 +15,22 @@
 <section>
     <!--Main content-->
     <div class="container-fluid">
+        <div class="row mt-3">
+            <div class="col-12">
+                <!-- Breadcrumbs to facilitate navigation - with links to previous pages -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url 'home' %}" class="breadcrumbs-text  darkgrey pl-2">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{% url 'products' %}" class="breadcrumbs-text  darkgrey">Gallery</a></li>
+                        {% for collection in selected_collections %}
+                            <li class="breadcrumb-item active" aria-current="page"><a href="{% url 'products' %}?collection={{ collection.name }}" 
+                        class="breadcrumbs-text  darkgrey">{{ collection.friendly_name }}</a>
+                            </li>
+                        {% endfor %}
+                    </ol>
+                </nav>
+            </div>
+        </div>
 
         <div class="row py-3">
             <div class="col-12 text-center">
@@ -31,22 +47,18 @@
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
                                 <div class="card-body pb-0">
-                                    <p class="mb-0">{{ product.name }}</p>
+                                    <p class="fw-bold mb-0">{{ product.name }}</p>
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                                             {% if product.collection %}
                                                 <p>
-                                                    <a class="text-muted" href="{% url 'products' %}?collection{{ product.collection.name }}">
+                                                    <a class="fw-lighter gold text-decoration-none" href="{% url 'products' %}?collection={{ product.collection.name }}">
                                                         <i class="fas fa-layer-group pr-1"></i> {{ product.collection.friendly_name }}
                                                     </a>
                                                 </p>
                                             {% endif %}
-                                        </div>
-                                    <div class="row">
-                                        <div class="col">
                                             <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                                             {% if product.sold %}
                                                 <small class="text-muted"><i class="fas fa-stamp pr-1"></i> Sold</small>
