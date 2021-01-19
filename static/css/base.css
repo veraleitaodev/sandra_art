@@ -70,7 +70,7 @@ body {
 }
 
 .white {
-    color: rgb(242, 242, 242) !important;
+    color: #f2f2f2 !important;
 }
 
 .lightgrey {
@@ -120,7 +120,7 @@ a.collection-badge > span.badge:hover {
     font-family: 'Exo', sans-serif;
 }
 
-/*--- Header ---*/
+/*--- Navbar ---*/
 
 .logo-nav {
     max-width: 150px;
@@ -146,7 +146,7 @@ a.collection-badge > span.badge:hover {
 
 .letter-dropdown {
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 
 .navbar-toggler-icon {
@@ -167,10 +167,32 @@ a.collection-badge > span.badge:hover {
     height:100vh;
 }
 
-.transparent-heading-item {
+.heading-item {
     letter-spacing: 1.5px;
 }
 
+/*-- back to top button --*/
+
+.back-top-btn {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid black !important;
+    border-radius: 4px;
+}
+
+.back-top-link {
+    cursor: pointer;
+}
+
+.back-top-btn:hover,
+.back-top-link:hover,
+.back-top-link i:hover {
+    text-shadow: none;
+    background-color: #BFAA8F;
+}
 
 /*--- products and product detail page ---*/
 

@@ -19,19 +19,12 @@
         {% include 'includes/breadcrumbs.html' %}
 
         <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="heading-font">Artwork</h2>
-                <!---->
-                
-                {% for c in current_collections %}
-                    <a class="collection-badge text-decoration-none" href="{% url 'products' %}?collection={{ c.name }}">
-                        <span class="p-2 mt-2 badge rounded-pill black">{{ c.friendly_name }}</span>
-                    </a>
-                {% endfor %}
-                
-                <hr class="w-50 mb-1">
+            <div class="col text-center my-3">
+                <h2 class="heading-font heading-item pb-2">Artwork</h2>
             </div>
         </div>
+        
+        {% include 'includes/search-info.html' %}
         
         <div class="row pb-3">
             <div class="col-10 offset-1">
@@ -88,6 +81,11 @@
                 </div>
             </div>
         </div>
+    </div>
+     <div class="back-top-btn">
+        <a class="back-top-link text-decoration-none d-flex h-100">
+            <i class="fas fa-arrow-up black mx-auto my-auto"></i>
+        </a>	
     </div>
 </section>
 {% endblock %}
