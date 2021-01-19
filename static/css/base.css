@@ -140,8 +140,17 @@ a.collection-badge > span.badge:hover {
 
 .transparent-nav-item, 
 .simple-nav-item {
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 6px;
+}
+
+.letter-dropdown {
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.navbar-toggler-icon {
+    font-size: xx-large;
 }
 
 /*--- Footer ---*/

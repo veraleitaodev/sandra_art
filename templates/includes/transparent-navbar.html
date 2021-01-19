@@ -80,12 +80,21 @@
                 <ul class="nav navbar-nav ms-auto mb-2 mb-lg-0">
                     <!-- Gallery link -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link white transparent-nav-item p-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">Gallery</a>
-                        <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                            <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                            <a href="{% url 'products' %}?sort=collection&direction=asc" class="dropdown-item ">By Collection</a>
-                            <a href="{% url 'products' %}" class="dropdown-item">All Artwork</a>
-                        </div>
+                        <a class="nav-link white transparent-nav-item p-3" id="gallery-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">Gallery</a>
+                        <ul class="dropdown-menu bg-black border-0" aria-labelledby="gallery-link">
+                            <li><a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item-text text-decoration-none white letter-dropdown">By Price</a></li>
+                            <li><a href="{% url 'products' %}?sort=collection&direction=asc" class="dropdown-item-text text-decoration-none white letter-dropdown">By Collection</a></li>
+                            <li><a href="{% url 'products' %}" class="dropdown-item-text text-decoration-none white letter-dropdown">All Artwork</a></li>
+                        </ul>
+                    </li>
+                    <!-- Collections link -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link white transparent-nav-item p-3" id="collections-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">Collections</a>
+                        <ul class="dropdown-menu bg-black border-0" aria-labelledby="collections-link">
+                            <li><a href="{% url 'products' %}?collection=ballerinas" class="dropdown-item-text text-decoration-none white letter-dropdown">Ballerinas</a></li>
+                            <li><a href="{% url 'products' %}?collection=traditions" class="dropdown-item-text text-decoration-none white letter-dropdown">Traditions</a></li>
+                            <li><a href="{% url 'products' %}?collection=reflections" class="dropdown-item-text text-decoration-none white letter-dropdown">Reflections</a></li>
+                        </ul>
                     </li>
                     <!-- About link -->
                     <li class="nav-item">
