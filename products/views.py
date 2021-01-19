@@ -51,7 +51,7 @@ def all_products(request):
         'search_term': query,
         'current_collections': collections,
         'current_sorting': current_sorting,
-        'selected_collections': collections,
+        'selected_collection': collections,
     }
 
     return render(request, 'products/products.html', context)
