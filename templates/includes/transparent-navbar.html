@@ -2,7 +2,7 @@
 
     <!--transparent header with dropdown account icon and shopping bag icon-->
     <div class="">
-    <div class="row  d-row-flex transparent-header justify-content-end px-0">
+    <div class="row  d-row-flex justify-content-end px-0">
         <div class="col-6 col-md-3">
             <ul class=" nav list-inline list-unstyled me-auto txt-center">
                 
@@ -32,7 +32,7 @@
                     <a class="white nav-link" type="text" id="dropdownMenu" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         <div class="text-center">
-                            <div><i class="fas fa-user-alt"></i></div>
+                            <div><i class="fas fa-user-alt" data-bs-toggle="tooltip" data-bs-placement="bottom" title="My Account"></i></div>
                         </div>
                     </a>
                     <ul class="dropdown-menu border-0" aria-labelledby="dropdownMenu">
@@ -49,10 +49,10 @@
                     </ul>
                 </li>
                 <!-- Shopping bag Icon -->
-                <li class="list-inline-item ">
+                <li class="list-inline-item">
                     <a class="{% if grand_total %}grey font-weight-bold{% else %}white{% endif %} nav-link" href="{% url 'view_bag' %}">
                         <div class="text-center">
-                            <div><i class="fas fa-shopping-bag fa-md"></i></div>
+                            <div><i class="fas fa-shopping-bag fa-md" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Shopping Cart"></i></div>
                         </div>
                     </a>
                 </li>
@@ -61,7 +61,7 @@
     </div>
 
     <!--Collapsible navbar with bootstrap framework-->
-    <nav class="navbar row navbar-expand-lg navbar-dark transparent-header px-3" id="navbar-colour" role="navigation">
+    <nav class="navbar row navbar-expand-lg navbar-dark px-3" id="navbar-colour" role="navigation">
         <div class="container-fluid">
             
             <!-- logo -->
@@ -73,7 +73,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon home-toggler-icon"></span>
+                    <span class="home-toggler-icon"><i class="fas fa-bars white"></i></span>
             </button>
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">

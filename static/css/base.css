@@ -97,10 +97,15 @@ body {
     background-color: #A6A6A6 !important;
 }
 
+
 /*-- hover --*/
 
-a:hover {
+nav a:hover {
     text-shadow: 5px 5px 10px #A6A6A6;
+}
+
+footer a i:hover {
+    color:#BFAA8F;
 }
 
 /*--- fonts ---*/
@@ -120,7 +125,7 @@ a:hover {
 }
 
 .transparent-header {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .home-toggler-icon {
@@ -155,7 +160,7 @@ a:hover {
 /*--- Masthead section ---*/
 
 .home-image-container {
-    background: url(https://res.cloudinary.com/veraleitao/image/upload/v1610267977/culpa_rf1gvv.png) no-repeat top center fixed;
+    background: url(https://res.cloudinary.com/veraleitao/image/upload/v1610267975/bailarina_yij5lo.jpg) no-repeat top center fixed;
     background-size:cover;
     height:100vh;
 }

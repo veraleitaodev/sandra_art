@@ -28,8 +28,8 @@
                     </li>
                     <!-- Account Icon with dropdown -->
                     <li class="list-inline-item dropdown">
-                        <a class="nav-link" type="text" id="dropdownMenu" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link" type="text" id="dropdownMenu" data-bs-toggle="dropdown tooltip"
+                        aria-expanded="false" data-bs-placement="bottom" title="My Account">
                             <div class="text-center">
                                 <div><i class="fas fa-user-alt black"></i></div>
                             </div>
@@ -49,7 +49,7 @@
                     </li>
                     <!-- Shopping bag Icon -->
                     <li class="list-inline-item ">
-                        <a class="{% if grand_total %}grey font-weight-bold{% else %}black{% endif %} nav-link" href="{% url 'view_bag' %}">
+                        <a class="{% if grand_total %}grey font-weight-bold{% else %}black{% endif %} nav-link" href="{% url 'view_bag' %}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Shopping Cart">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-md"></i></div>
                             </div>
@@ -72,7 +72,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="home-toggler-icon"><i class="fas fa-bars black"></i></span>
                 </button>
                 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -105,6 +105,6 @@
                         </li>
                     </ul>
                 </div>
-        </div>
+            </div>
         </nav>
     </div>

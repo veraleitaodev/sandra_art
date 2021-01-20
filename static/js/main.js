@@ -14,4 +14,13 @@ $(document).ready(function () {
         window.scrollTo(0,0);
         $('.back-top-btn').hide();
     });
+
+    // to activate bootstrap 5 tooltips - code sourced on bootstrap documentation -
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    });
+
+    console.log(tooltipList);
 });
