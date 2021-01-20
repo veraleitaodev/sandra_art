@@ -1,6 +1,6 @@
 
 
-def bag_content(request):
+def bag_contents(request):
 
     bag_items = []
     total = 0
