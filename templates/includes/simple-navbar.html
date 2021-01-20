@@ -28,10 +28,10 @@
                     </li>
                     <!-- Account Icon with dropdown -->
                     <li class="list-inline-item dropdown">
-                        <a class="nav-link" type="text" id="dropdownMenu" data-bs-toggle="dropdown tooltip"
+                        <a class="nav-link" type="text" id="dropdownMenu" data-bs-toggle="dropdown"
                         aria-expanded="false" data-bs-placement="bottom" title="My Account">
                             <div class="text-center">
-                                <div><i class="fas fa-user-alt black"></i></div>
+                                <div><i class="fas fa-user-alt black" data-bs-toggle="tooltip" data-bs-placement="bottom" title="My Account"></i></div>
                             </div>
                         </a>
                         <ul class="dropdown-menu border-0" aria-labelledby="dropdownMenu">
@@ -51,7 +51,7 @@
                     <li class="list-inline-item ">
                         <a class="{% if grand_total %}grey font-weight-bold{% else %}black{% endif %} nav-link" href="{% url 'view_bag' %}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Shopping Cart">
                             <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-md"></i></div>
+                                <div><i class="fas fa-shopping-bag fa-md" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Shopping Cart"></i></div>
                             </div>
                         </a>
                     </li>
