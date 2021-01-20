@@ -3,6 +3,7 @@
 {% block extra_title %}Shopping Bag{% endblock %}
 
 {% block content %}
+<!--header with white background and black elements -->
 <header>
     {% include 'includes/simple-navbar.html' %}
 </header>
@@ -11,8 +12,19 @@
 <section>
     {% include 'includes/banner.html' %}
 </section>
-<main>
-  <h1>shopping bag
-  </h1>
-</main>
+
+<section>
+    <!--Main content-->
+    <div class="container-fluid">
+
+        <!--Breadcrumbs to facilitate navigation -->
+        {% include 'bag/includes/breadcrumbs.html' %}
+
+        <div class="row">
+            <div class="col text-center my-3">
+                <h2 class="heading-font heading-item pb-2">Shopping Bag</h2>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}
