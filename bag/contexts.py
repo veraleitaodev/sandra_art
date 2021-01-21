@@ -9,7 +9,7 @@ def bag_contents(request):
     product_count = 0
     delivery = 0
     bag = request.session.get('bag', {})
-    grand_total = delivery + total
+    grand_total = total
 
     for item_id, quantity in bag.items():
         product = get_object_or_404(Product, pk=item_id)
