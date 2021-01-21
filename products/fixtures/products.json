@@ -5,7 +5,7 @@
         "fields": {
             "sku": "BAKTRAOIL1",
             "name": "Baker Palmira",
-            "description": "Oil Pastel on board\" W 120 cm x H 150 cm",
+            "description": "Oil Pastel on board  \r W 120 cm x H 150 cm",
             "price": 800.00,
             "collection": 2,
             
@@ -20,7 +20,7 @@
         "fields": {
             "sku": "ANGREFOIL1",
             "name": "Angel",
-            "description": "Oil Pastel on canvas\" W 60 cm x H 90 cm",
+            "description": "Oil Pastel on canvas  \r W 60 cm x H 90 cm",
             "price": 700.00,
             "collection": 3,
             
@@ -35,7 +35,7 @@
         "fields": {
             "sku": "BALBALOIL2",
             "name": "Ballerina in Pink",
-            "description": "Oil Pastel on board\" W 120 cm x H 100 cm",
+            "description": "Oil Pastel on board  \r W 120 cm x H 100 cm",
             "price": 900.00,
             "collection": 1,
             
@@ -65,7 +65,7 @@
         "fields": {
             "sku": "BAKTRAOIL2",
             "name": "Baker",
-            "description":  "Oil Pastel on board\" W 120 cm x H 150 cm",
+            "description":  "Oil Pastel on board  \r W 120 cm x H 150 cm",
             "price": 700.00,
             "collection": 2,
             
@@ -80,7 +80,7 @@
         "fields": {
             "sku": "GUIREFOIL1",
             "name": "Guilt",
-            "description": "Oil Pastel on board\" W 120 cm x H 150 cm",
+            "description": "Oil Pastel on board  \r W 120 cm x H 150 cm",
             "price": 700.00,
             "collection": 3,
             
@@ -95,7 +95,7 @@
         "fields": {
             "sku": "EMPREFOIL1",
             "name": "Empress",
-            "description": "Oil Pastel on board\" W 120 cm x H 150 cm",
+            "description": "Oil Pastel on board  \r W 120 cm x H 150 cm",
             "price": 700.00,
             "collection": 3,
             
@@ -110,7 +110,7 @@
         "fields": {
             "sku": "INNBALOIL1",
             "name": "Innocence",
-            "description": "Oil Pastel on board\" W 120 cm x H 100 cm",
+            "description": "Oil Pastel on board  \r W 120 cm x H 100 cm",
             "price": 700.00,
             "collection": 1,
             
@@ -125,7 +125,7 @@
         "fields": {
             "sku": "SHETRAOIL1",
             "name": "Shepherd",
-            "description": "Oil Pastel on board\" W 120 cm x H 100 cm",
+            "description": "Oil Pastel on board  \r W 120 cm x H 100 cm",
             "price": 800.00,
             "collection": 2,
             
@@ -140,7 +140,7 @@
         "fields": {
             "sku":"SHETRAOIL2",
             "name": "Shepherd Portrait",
-            "description": "Oil Pastel on board\" W 120 cm x H 150 cm",
+            "description": "Oil Pastel on board  \r W 120 cm x H 150 cm",
             "price": 800.00,
             "collection": 2,
             
@@ -155,7 +155,7 @@
         "fields": {
             "sku":"BALBALOIL2",
             "name": "Ballerina in red",
-            "description": "Oil Pastel on board\" W 120 cm x H 150 cm",
+            "description": "Oil Pastel on board  \r W 120 cm x H 150 cm",
             "price": 800.00,
             "collection": 1,
             
