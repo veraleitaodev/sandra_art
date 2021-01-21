@@ -47,6 +47,7 @@
                                     <td class="py-3">
                                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                                         <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
+                                        <a class="remove-item darkgold" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">€{{ item.product.price }}</p>
@@ -54,14 +55,14 @@
                                 </tr>
                             {% endfor %}
                             <tr>
-                                <td colspan="3" class="pt-5 text-right">
+                                <td colspan="3" class="pt-5 text-end">
                                     <h6><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
                                     <h6>Delivery: €0.00</h6>
                                     <h4 class="mt-4"><strong>Grand Total: €{{ total|floatformat:2 }}</strong></h4>
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="3" class="text-right">
+                                <td colspan="3" class="text-end">
                                     <a href="{% url 'products' %}" class="btn btn-outline-dark">
                                         <span class="icon">
                                             <i class="fas fa-chevron-left"></i>
@@ -80,7 +81,7 @@
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your bag is empty.</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-dark">
+                    <a href="{% url 'products' %}" class="btn btn-outline-dark mb-5">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
