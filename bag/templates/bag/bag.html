@@ -3,94 +3,94 @@
 {% block extra_title %}Shopping Bag{% endblock %}
 
 {% block content %}
-<!--header with white background and black elements -->
-<header>
-    {% include 'includes/simple-navbar.html' %}
-</header>
+    <!--header with white background and black elements -->
+    <header>
+        {% include 'includes/simple-navbar.html' %}
+    </header>
 
-<!--Banner Section-->
-<section>
-    {% include 'includes/banner.html' %}
-</section>
+    <!--Banner Section-->
+    <section>
+        {% include 'includes/banner.html' %}
+    </section>
 
-<section>
-    <!--Main content-->
-    <div class="container-fluid">
+    <section>
+        <!--Main content-->
+        <div class="container-fluid">
 
-        <!--Breadcrumbs to facilitate navigation -->
-        {% include 'bag/includes/breadcrumbs.html' %}
+            <!--Breadcrumbs to facilitate navigation -->
+            {% include 'bag/includes/breadcrumbs.html' %}
 
-        <div class="row">
-            <div class="col text-center my-3">
-                <h2 class="heading-font heading-item pb-2">Shopping Bag</h2>
+            <div class="row">
+                <div class="col text-center my-3">
+                    <h2 class="heading-font heading-item pb-2">Shopping Bag</h2>
+                </div>
             </div>
-        </div>
-        <!-- Layout and functionality from boutique ado project to be modified and adapted to this project -->
-        <div class="row">
-            <div class="col">
-                {% if bag_items %}
-                    <div class="table-responsive rounded">
-                        <table class="table table-sm table-borderless">
-                            <thead class="black">
-                                <tr>
-                                    <th scope="col">Product Info</th>
-                                    <th scope="col"></th>
-                                    <th scope="col">Price</th>
-                                </tr>
-                            </thead>
+            <!-- Layout and functionality from boutique ado project to be modified and adapted to this project -->
+            <div class="row">
+                <div class="col">
+                    {% if bag_items %}
+                        <div class="table-responsive rounded">
+                            <table class="table table-sm table-borderless">
+                                <thead class="black">
+                                    <tr>
+                                        <th scope="col">Product Info</th>
+                                        <th scope="col"></th>
+                                        <th scope="col">Price</th>
+                                    </tr>
+                                </thead>
 
-                            {% for item in bag_items %}
+                                {% for item in bag_items %}
+                                    <tr>
+                                        <td class="p-3 w-25">
+                                            <img class="img-fluid rounded" src="{{ item.product.image.url }}">
+                                        </td>
+                                        <td class="py-3">
+                                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                                            <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
+                                            <a class="remove-item darkgold" href="/bag/{{ remove.item_id }}"><small>Remove</small></a>
+                                        </td>
+                                        <td class="py-3">
+                                            <p class="my-0">€{{ item.product.price }}</p>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
                                 <tr>
-                                    <td class="p-3 w-25">
-                                        <img class="img-fluid rounded" src="{{ item.product.image.url }}">
-                                    </td>
-                                    <td class="py-3">
-                                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                                        <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
-                                        <a class="remove-item darkgold" id="remove_{{ item.item_id }}"><small>Remove</small></a>
-                                    </td>
-                                    <td class="py-3">
-                                        <p class="my-0">€{{ item.product.price }}</p>
+                                    <td colspan="3" class="pt-5 text-end">
+                                        <h6><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
+                                        <h6>Delivery: €0.00</h6>
+                                        <h4 class="mt-4"><strong>Grand Total: €{{ total|floatformat:2 }}</strong></h4>
                                     </td>
                                 </tr>
-                            {% endfor %}
-                            <tr>
-                                <td colspan="3" class="pt-5 text-end">
-                                    <h6><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
-                                    <h6>Delivery: €0.00</h6>
-                                    <h4 class="mt-4"><strong>Grand Total: €{{ total|floatformat:2 }}</strong></h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" class="text-end">
-                                    <a href="{% url 'products' %}" class="btn btn-outline-dark">
-                                        <span class="icon">
-                                            <i class="fas fa-chevron-left"></i>
-                                        </span>
-                                        <span class="text-uppercase">Keep Shopping</span>
-                                    </a>
-                                    <a href="" class="btn btn-dark">
-                                        <span class="text-uppercase">Secure Checkout</span>
-                                        <span class="icon">
-                                            <i class="fas fa-lock"></i>
-                                        </span>
-                                    </a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                {% else %}
-                    <p class="lead mb-5">Your bag is empty.</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-dark mb-5">
-                        <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="text-uppercase">Keep Shopping</span>
-                    </a>
-                {% endif %}
+                                <tr>
+                                    <td colspan="3" class="text-end">
+                                        <a href="{% url 'products' %}" class="btn btn-outline-dark">
+                                            <span class="icon">
+                                                <i class="fas fa-chevron-left"></i>
+                                            </span>
+                                            <span class="text-uppercase">Keep Shopping</span>
+                                        </a>
+                                        <a href="" class="btn btn-dark">
+                                            <span class="text-uppercase">Secure Checkout</span>
+                                            <span class="icon">
+                                                <i class="fas fa-lock"></i>
+                                            </span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    {% else %}
+                        <p class="lead mb-5">Your bag is empty.</p>
+                        <a href="{% url 'products' %}" class="btn btn-outline-dark mb-5">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="text-uppercase">Keep Shopping</span>
+                        </a>
+                    {% endif %}
+                </div>
             </div>
-        </div>
 
-    </div>
-</section>
+        </div>
+    </section>
 {% endblock %}

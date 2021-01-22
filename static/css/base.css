@@ -183,7 +183,7 @@ footer a i:hover {
 }
 
 .back-top-link,
-.remove-item {
+a.remove-item {
     cursor: pointer;
 }
 
