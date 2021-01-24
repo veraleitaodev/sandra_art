@@ -13,6 +13,7 @@ $(document).ready(function () {
          
         window.scrollTo(0,0);
         $('.back-top-btn').hide();
+        
     });
 
     // to activate bootstrap 5 tooltips - code sourced on bootstrap documentation -
@@ -23,5 +24,15 @@ $(document).ready(function () {
     });
 
     console.log(tooltipList);
-    
+
+    // remove item
+    $('.remove-item').click(function (e) {
+        let itemId = $(this).attr('id').split('remove_')[1];
+        let url = `/bag/remove/${itemId}/`;
+        
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+        });
+    });
 });

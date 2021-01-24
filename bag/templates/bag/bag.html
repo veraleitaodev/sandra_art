@@ -36,6 +36,7 @@
                                         <th scope="col">Product Info</th>
                                         <th scope="col"></th>
                                         <th scope="col">Price</th>
+                                        <th scope="col"></th>
                                     </tr>
                                 </thead>
 
@@ -47,15 +48,20 @@
                                         <td class="py-3">
                                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                                             <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
-                                            <a class="remove-item darkgold" href="/bag/{{ remove.item_id }}"><small>Remove</small></a>
                                         </td>
                                         <td class="py-3">
                                             <p class="my-0">€{{ item.product.price }}</p>
                                         </td>
+                                        <td class="py-3">
+                                            <form class="form" action="{% url 'remove_from_bag' item.item_id %}" method="POST">
+                                                {% csrf_token %}
+                                                <a class="remove-item darkgold" ><small>Remove</small></a>
+                                            </form>
+                                        </td>
                                     </tr>
                                 {% endfor %}
                                 <tr>
-                                    <td colspan="3" class="pt-5 text-end">
+                                    <td colspan="4" class="pt-5 text-end">
                                         <h6><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
                                         <h6>Delivery: €0.00</h6>
                                         <h4 class="mt-4"><strong>Grand Total: €{{ total|floatformat:2 }}</strong></h4>
@@ -94,3 +100,7 @@
         </div>
     </section>
 {% endblock %}
+
+<script>
+    
+</script>
