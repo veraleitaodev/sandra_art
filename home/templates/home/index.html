@@ -27,44 +27,48 @@
             <!-- Gallery Grid Items-->
             <div class="row justify-content-center">
                 <!-- Gallery Item 1-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="gallery-item mx-auto px-lg-5" >
-                        <img class="img-fluid" src="{% static 'images/angel.jpg' %}" alt="angel" />
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="text-center mt-2 text-dark">
-                                <p class="item-title">Angel</p>
-                                <p class="blockquote">€600</p>
+                <div class="col-4 mb-5">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                        {% for artwork in products_carousel %}
+                        {% if forloop.counter == 1 %}
+                            <div class="carousel-item active">
+                                <img class="img-fluid w-100" src="{{ artwork.image.url }}" alt="{{ artwork.name }}"  />
+                                <div class="carousel-caption">
+                                    <a href="/products/{{ artwork.id }}/" class="btn btn-outline-light">View more</a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Gallery Item 2-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="gallery-item mx-auto px-lg-5" >
-                        <img class="img-fluid" src="{% static 'images/imperatriz.jpg' %}" alt="empress" />
-                        <div class="gallery-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="mt-2 text-center text-dark">
-                                <p class="blockquote">Empress</p>
-                                <p class="blockquote">€780</p>
+                        {% else %}
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="{{ artwork.image.url }}" alt="{{ artwork.name }}"/>
+                                <div class="carousel-caption">
+                                    <a href="/products/{{ artwork.id }}/" class="btn btn-outline-light">View more</a>
+                                </div>
                             </div>
+                        {% endif %}
+                        {% endfor %}
                         </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>  
                     </div>
-                </div>
-                <!-- Gallery Item 3-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="gallery-item mx-auto px-lg-5" >
-                        <img class="img-fluid" src="{% static 'images/culpa.png' %}" alt="guilt" />
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="mt-2 text-center text-dark">
-                                <p class="blockquote">Guilt</p>
-                                <p class="blockquote text-mute">Sold</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
+                </div> 
             </div>
-        </div>
+        </div>                  
     </section>
 
     <!-- About Section-->

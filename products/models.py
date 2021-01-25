@@ -22,6 +22,7 @@ class Product(models.Model):
     image_url = models.URLField(max_length=1024)
     image = models.ImageField()
     sold = models.BooleanField(default=False)
-   
+    landscape = models.BooleanField(default=False)
+
     def __str__(self):
         return self.name

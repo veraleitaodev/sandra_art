@@ -169,6 +169,11 @@ footer a i:hover {
     letter-spacing: 1.5px;
 }
 
+/*-- homepage gallery --*/
+.carousel-item img {
+
+}
+
 /*-- back to top button --*/
 
 .back-top-btn {
