@@ -432,9 +432,10 @@ I have ried changing collection names but no different until realised that there
 - commit 85a08838368a8bb7c920cf2418c009eff9fb0c52: fixed a bug with![migrations](static/images/readme/error_1.png) after renaming product category to product collection. I had the help of Slack community and tutors. Tutor Igor Basuga add helped me paciently with this issue.
 - commit cbb1b49580165ffa3029b27400ce9c24deb8f4e0: fixed a bug, when sorting by collections it was not showing the correct order of the items. I have tried to find errors in the product/views.py file and could not identify an error until finally examining both fixtures files. collections.json did not contain any error, however, products.json had different itens with incorrect collection numbers. It was an input error and once it was corrected the items were sorted correctly by their collections
 - https://coder-coder.com/background-image-opacity/ fixing bg image in home page, although using a pseudoelement was no the solution for the home page as it changed the layout of the different elements, it helped me understand why I could not change only the opacity of the background image without affecting the opacity of child elements. the answaer I found was to implement a background colour with desired opacity in a child element of the image that would be a parent of all the text I wanted to highlight. Moreover I used h-100 class so that all screen would have have that opacity.
+- remove link fixed
 
 ### Bugs Not resolved
 - add landscape filter to the carousel in homepage - so that images have the same size
-- remove button to work
+- item can be added to basket more than once
 - search to return collection names also
 - back to top button to disappear when it gets to top
