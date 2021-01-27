@@ -27,8 +27,10 @@ $(document).ready(function () {
 
     // remove item
     $('.remove-item').click(function (e) {
-        let itemId = $(this).attr('id').split('remove_')[1];
-        let url = `/bag/remove/${itemId}/`;
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id');
+        var url = `/bag/remove/${itemId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken};
         
         $.post(url, data)
          .done(function() {

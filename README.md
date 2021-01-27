@@ -434,3 +434,4 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 -   I have copied and pasted small pieces of work from my first attempt at this project, in the repository [sl_art](https://github.com/veraleitaodev/sl_art/).
 -  Logo created at [canva.com](https://www.canva.com/)
 -  css gradient code from [cssportal.com](https://www.cssportal.com/css-text-gradient-generator/)
+- help in understanding how to use django in a carousel https://stackoverflow.com/questions/30119351/how-to-make-an-object-slider-in-django

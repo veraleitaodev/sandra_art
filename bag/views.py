@@ -29,8 +29,8 @@ def remove_from_bag(request, item_id):
     try:
         bag = request.session.get('bag', {})
         bag.pop(item_id)
-
         request.session['bag'] = bag
+
         return HttpResponse(status=200)
 
     except Exception as e:

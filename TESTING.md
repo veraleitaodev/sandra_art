@@ -436,4 +436,5 @@ I have ried changing collection names but no different until realised that there
 ### Bugs Not resolved
 - add landscape filter to the carousel in homepage - so that images have the same size
 - remove button to work
--search to return collection names also
+- search to return collection names also
+- back to top button to disappear when it gets to top
