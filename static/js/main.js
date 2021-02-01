@@ -25,4 +25,9 @@ $(document).ready(function () {
 
     console.log(tooltipList);
 
+    // bootstrap toast to be shown
+
+    $('.toast').toast('show');
+    
+
 });
