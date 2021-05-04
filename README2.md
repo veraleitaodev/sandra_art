@@ -1,4 +1,4 @@
-# Title
+<!--# Title
 
 The live website can be viewed [here]()      
 <img src="" alt="mockup" target="_blank" rel="noopener" width="850">
@@ -894,3 +894,4 @@ Tim, Michael, Miklos, Stephen, Anna, Samantha, Haley and other Code Institute tu
 Many thanks to my fellow students, Slack community and, of course, my friends and my family for the time, patience, help and support!
 ↥ Back To Top
 */
+--!>
